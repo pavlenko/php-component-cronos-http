@@ -1,0 +1,50 @@
+{
+    "config": {
+        "sort-packages": true
+    },
+    "name": "pe/component-cronos-http",
+    "description": "Cronos http transport sub-component",
+    "keywords": [],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eugene Pavlenko",
+            "email": "pavlenko.obs@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "pe/component-cronos-core": "^1.0",
+        "psr/http-client": "^1.0",
+        "psr/http-factory": "^1.0",
+        "psr/http-message": "^1.0",
+        "psr/http-server-handler": "^1.0"
+
+    },
+    "require-dev": {
+        "php-http/curl-client": "^2.0",
+        "phpunit/phpunit": "~6.0",
+        "zendframework/zend-httphandlerrunner": "^1.1",
+        "zendframework/zend-diactoros": "^2.1"
+    },
+    "suggest": {
+        "php-http/curl-client": "For use as http client implementation",
+        "zendframework/zend-httphandlerrunner": "For use Zend response emitter",
+        "zendframework/zend-diactoros": "For use Zend factories"
+    },
+    "autoload": {
+        "psr-4": {
+            "PE\\Component\\Cronos\\HTTP\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PE\\Component\\Cronos\\HTTP\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
